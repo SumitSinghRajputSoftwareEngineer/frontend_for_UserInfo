@@ -1,0 +1,57 @@
+.user-details {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+  background: linear-gradient(to right, #ffc107, #ffa751, #ffffff); /* Gradient background */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
+.user-details img {
+  max-width: 80%;
+  border-radius: 5%;
+  margin-bottom: 1rem;
+  background-color: white;
+}
+
+.user-details h2 {
+  font-size: 2rem; /* Increase font size for headings */
+  margin-bottom: 1rem;
+}
+
+.user-profile {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.user-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Remove margin for better spacing */
+  columns: 2 auto; /* Divide list items into two columns */
+  column-gap: 2rem; /* Add spacing between columns */
+}
+@media screen and (max-width: 880px) { 
+  .user-info-list {
+    columns: 1 auto; 
+  }
+}
+
+.info-label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.element{
+  padding: 2%;
+}
