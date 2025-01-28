@@ -1,20 +1,15 @@
-import { Route, Router, Routes } from "react-router-dom";
+import { Route,  Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import { lazy, Suspense } from "react";
 import LoadingSpinner from "./Components/LoadingSpinner";
-
-// import UserDetails from './Components/UserDetails';
-// import UserList from './Components/UserList';
-// import HomePage from './Components/HomePage';
-// import SortedUser from './Components/SortedUser';
 
 const UserDetails = lazy(() => import("./Components/UserDetails"));
 const UserList = lazy(() => import("./Components/UserList"));
 const SortedUser = lazy(() => import("./Components/SortedUser"));
 
 function App() {
-  return (
+  return ( 
     <div>
       <Navbar />
       <Routes>
