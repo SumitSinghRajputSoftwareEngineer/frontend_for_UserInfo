@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-        <div class="container-fluid">
+        <div className="container-fluid">
           <a class="navbar-brand" >
             UsersStack
           </a>

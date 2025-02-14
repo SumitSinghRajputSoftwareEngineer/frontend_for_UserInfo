@@ -10,17 +10,18 @@ export default function UserList() {
   const [sortOrder, setSortOrder] = useState("asc");
 
   useEffect(() => {
+    const url = process.env.React_app;
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/api/users/load"); // Replace with actual API endpoint
+        const response = await axios.get(url); // Replace with actual API endpoint
         console.log(response);
         setUsers(response.data);
       } catch (error) {
         console.error("Error fetching users:", error);
-        // Handle error gracefully (e.g., display an error message)
+        // Handle error gracefully 
       }
     };
-
+99
     fetchUsers();
   }, []);
 
@@ -30,7 +31,6 @@ export default function UserList() {
 
   return (
     <div className="user-list-container">
-      {/* <button onClick={handleSort}>Sort by Age ({sortOrder})</button> */}
       <div className="user-grid">
         {users.map((user) => (
           <UserCard key={user.id} user={user} />
